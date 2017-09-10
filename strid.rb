@@ -3,7 +3,7 @@ class Strid < Formula
   homepage "http://smimram.github.io/strid/"
   head "https://github.com/smimram/strid.git", :revision => "0178405f802af91646094ddf44d6017595f2c7ac"
 
-  depends_on "ocaml" => :build
+  depends_on "ocaml" => [:build, "with-x11"]
 
   def install
     ENV.deparallelize
